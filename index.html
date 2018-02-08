@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>drag and drop</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container" id="all">
+    <div class="row collage">
+      <div class="drop-small">
+        <div class="drop" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+      <div class="drop" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+      </div>
+       <div class="drop-large" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+    </div>
+    <div class="row">
+      <div class="drag"><img id="one" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/one.jpg" alt=""></div>
+      <div class="drag"><img id="two" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/two.jpg" alt=""></div>
+      <div class="drag"><img id="three" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/three.jpg" alt=""></div>
+      <div class="drag"><img id="four" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/four.jpg" alt=""></div>
+      <div class="drag"><img id="five" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/five.jpg" alt=""></div>
+      <div class="drag"><img id="six" class="img-responsive" draggable="true" ondragstart="drag(event)" src="assets/img/six.jpg" alt=""></div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
